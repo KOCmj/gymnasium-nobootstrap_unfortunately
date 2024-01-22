@@ -1,0 +1,346 @@
+* {
+    /* border: 1px solid red; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    list-style: none;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: indigo;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    background-color: black;
+    position: fixed;
+    top: 0px;
+    height: 60px;
+}
+
+.nav-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.navbar-brand {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 5%;
+}
+
+.navbar-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+    height: 100%;
+}
+
+.nav-item {
+    margin: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(8, 162, 8);
+}
+
+a:hover {
+    color: mediumpurple;
+}
+ /* no idea what I did. */
+.background {
+    align-items: center;
+    display: grid;
+    position: static;
+    justify-content: space-around;
+    border: 10px solid greenyellow;
+    clip-path: polygon(100% 10%, 0% 0%, 48% 200%);
+    padding: 0px;
+    margin: 0px;
+    max-width: 500px;
+    height: 500px;
+    z-index: -1;
+    margin-top: -10px;
+}
+
+h1.feats {
+    display: flex;
+    grid-row: span 2;
+    width: 100%;
+    position: static;
+    margin-top: 5px;
+    z-index: -1;
+    height: 5em;
+    align-items: stretch;
+    font-size: 3em;
+    object-fit: cover;
+    border: 5px solid greenyellow;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 100%;
+}
+
+
+.feats {
+    z-index: 1;
+    height: 20em;
+    justify-content: center;
+    align-items: stretch;
+    color: rgb(8, 162, 8);
+    display: flex;
+    font-size: 3em;
+    text-shadow: -1px 1px 2px #000,
+                1px 1px 0 #000,
+                1px -1px 0 #000,
+                -1px -1px 0 #000;
+}
+
+
+.membership-header {
+    background-color: indigo;
+    color: rgb(8, 162, 8);
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    background: linear-gradient(to bottom, rgba(74, 7, 157, 0) 0%, rgb(44, 1, 86) 40%);
+    align-items: flex-end;
+}
+
+button {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgb(6, 151, 33) 40%);
+    color: rgb(44, 1, 86);
+}
+
+.image-container-membership {
+    max-width: 100%;
+    align-content: center;
+    position: static;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+table{
+    width: 100%;
+    height: 100%;
+    background-color: indigo;
+    color: rgb(8, 162, 8);
+    padding-bottom: 20px;
+    position: static;
+    border-collapse: collapse;
+} 
+
+td, th {
+    border: 1px solid greenyellow;
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+    font-weight: 900;
+    text-decoration: underline;
+}
+
+.schedule-container {
+    align-content: center;
+    position: static;
+    justify-content: center;
+    color: rgb(8, 162, 8);
+}
+
+.wrap-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 450px 450px 450px;
+    grid-gap: 60px;
+}
+
+.box {
+    max-width: 300px;
+    height: auto;
+    color: rgb(8, 162, 8);
+    background-color: rgba(74, 7, 157, 0.8);
+}
+
+.grid-image {
+    object-fit: cover;
+    max-width: 700px;
+    height: auto;
+    justify-content: space-evenly;
+}
+
+.class{
+    color: rgb(8, 162, 8);
+    justify-content: space-evenly;
+}
+
+.grid-text {
+    text-align: center;
+    text-decoration-color: rgb(8, 162, 8);
+}
+
+h3 {
+    color: rgb(8, 162, 8);
+}
+
+footer {
+    margin-bottom: 0px;
+}
+
+.bottom {
+    background-color: indigo;
+    color: rgb(8, 162, 8);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding-top: 30px;
+    justify-content: space-evenly;
+}
+
+.map {
+    width: 250px;
+    padding: 2%;
+    padding-left: 100px;
+}
+
+.mapping {
+    width: 250px;
+}
+
+.footinfo {
+    display: flex;
+    flex-direction: column;
+    font: 0.6em;
+    width: 25%;
+}
+
+.foot-trainers {
+    display: flex;
+    color: rgb(8, 162, 8);
+    flex-direction: column;
+    font: 0.6em;
+    width: 25%;
+}
+
+.socials {
+    display: flex;
+    flex-direction: column;
+    font: 0.6em;
+    width: 25%;
+}
+
+.foothead {
+    font-size: 2em;
+}
+
+.tiny {
+    margin: 3px;
+}
+
+form {
+    padding-left: 20px;
+    color: rgb(8, 162, 8);
+    padding: 5px;
+    background-color: rgb(44, 1, 86);
+    border: 3px solid greenyellow;
+    border-radius: 5px;
+}
+
+input {
+    background-color: greenyellow;
+}
+
+textarea {
+    background-color: greenyellow;
+    border-width: 2px;
+    border-style: inset;
+    border-color: rgb(6, 32, 27);
+}
+
+h4 {
+    color: rgb(8, 162, 8);
+}
+
+.about-info {
+    color: rgb(8, 162, 8);
+    justify-content: center;
+    border: 1px solid greenyellow;
+}
+
+.about-name {
+    text-decoration: underline solid greenyellow;
+}
+
+.image-about {
+    position: static;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-container {
+    justify-content: center;
+    color: rgb(8, 162, 8);
+    display: flex;
+}
+/* extra A for effort
+.sidebar {
+    position: fixed;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background: rgb(44, 1, 86);
+}
+
+.sidebar header {
+    font-size: 22px;
+    color: greenyellow;
+    text-align: center;
+    line-height: 70px;
+    background: rgb(22, 1, 51);
+    user-select: none;
+}
+
+.sidebar ul a{
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 65px;
+    font-size: 20px;
+    color: rgb(8, 162, 8);
+    padding-left: 40px;
+    box-sizing: border-box;
+    border-top: 1px sold rgba(255,255,255,.1);
+
+} */
